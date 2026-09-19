@@ -1,0 +1,526 @@
+/* =========================
+   BASIC SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #3d2921;
+    background-color: #fffaf4;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+    background-color: #3b241b;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    color: #d9b27c;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    background-image:
+        linear-gradient(
+            rgba(45, 28, 20, 0.55),
+            rgba(45, 28, 20, 0.55)
+        ),
+        url("images/cafe-1.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin-left: 8%;
+    color: white;
+}
+
+.hero-text p:first-child {
+    letter-spacing: 3px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.hero-text h1 {
+    font-family: Georgia, serif;
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+
+    background-color: #8b5e3c;
+    color: white;
+
+    border-radius: 4px;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #6f472d;
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section {
+    padding: 80px 8%;
+}
+
+.section-title {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.section-title p:first-child {
+    color: #9a6a42;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.section-title h2 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    text-align: center;
+    background-color: #f5eadc;
+}
+
+.about > p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 17px;
+}
+
+
+/* =========================
+   CAKES & PASTRIES
+========================= */
+
+.menu-section {
+    background-color: #fffaf4;
+}
+
+.food-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.food-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+}
+
+.food-card img {
+    height: 240px;
+    object-fit: cover;
+}
+
+.food-card h3 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    padding: 18px 20px 5px;
+}
+
+.food-card p {
+    padding: 0 20px 20px;
+    color: #6d5a50;
+}
+
+
+/* =========================
+   DRINKS
+========================= */
+
+.drinks-section {
+    background-color: #f5eadc;
+}
+
+.drink-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.drink-card {
+    background-color: white;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.drink-card img {
+    height: 230px;
+    object-fit: cover;
+}
+
+.drink-card h3 {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    padding: 15px;
+}
+
+
+/* =========================
+   CELEBRATION CAKES
+========================= */
+
+.celebration {
+    background-color: #fffaf4;
+}
+.celebration-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.celebration-card {
+    text-align: center;
+}
+
+.celebration-card img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.celebration-card h3 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+
+/* =========================
+   OUR CAFÉ
+========================= */
+
+.cafe-section {
+    background-color: #3b241b;
+    color: white;
+}
+
+.cafe-section .section-title p:first-child {
+    color: #d9b27c;
+}
+
+.cafe-gallery {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.cafe-gallery img {
+    height: 280px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+/* =========================
+   LOCATIONS
+========================= */
+
+.locations {
+    background-color: #f5eadc;
+}
+
+.location-container {
+    max-width: 900px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.location-card {
+    background-color: white;
+    padding: 35px;
+    text-align: center;
+
+    border-radius: 8px;
+}
+
+.location-card h3 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.location-card p {
+    color: #6d5a50;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    text-align: center;
+    background-color: #fffaf4;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #3b241b;
+    color: white;
+    padding: 45px 8% 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-content h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+}
+
+.footer-content p {
+    margin: 8px 0 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer-links a:hover {
+    color: #d9b27c;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+
+    border-top: 1px solid #654a3c;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   MOBILE PHONE
+========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero-text {
+        margin: 0 8%;
+    }
+
+    .hero-text h1 {
+        font-size: 42px;
+    }
+
+    .food-container {
+        grid-template-columns: 1fr;
+    }
+
+    .drink-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .celebration-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cafe-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .location-container {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 60px 6%;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 480px) {
+
+    .logo img {
+        width: 100px;
+    }
+
+    nav ul {
+        gap: 8px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    .hero-text h1 {
+        font-size: 35px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .drink-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cafe-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
